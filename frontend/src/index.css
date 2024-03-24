@@ -2,12 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-div{
-    border: 1px solid red;
+html{
+    scroll-behavior: smooth;
+    
 }
+
+.splide__arrow.splide__arrow--next, .splide__arrow.splide__arrow--prev {
+    background-color: rgb(17, 161, 17);
+    border-radius: 0px;
+    padding: 1.5rem;
+    background-image: url(./Assests/Icons/Arrows/Vrstva\ 559.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.splide__arrow.splide__arrow--prev{
+    left: 0;
+}
+.splide__arrow.splide__arrow--next{
+    right: 0;
+    transform: rotate(180deg);
+}
+
+/* div{
+    border: 1px solid red;
+} */
