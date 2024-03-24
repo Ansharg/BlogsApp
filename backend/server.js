@@ -5,8 +5,9 @@ const session  = require("express-session");
 require('dotenv').config();
 const userRouter = require('./routes/user')
 const blogRouter = require('./routes/blog')
+const cors = require("cars")
 
-
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

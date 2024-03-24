@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import axios from 'axios'
 
 const Herosection = () => {
+    useEffect(()=>{
+        async function fetching(){
+            const blogs = await axios.get(`${process.env.REACT_APP_BASE_URL}get-blog/65f06e4fe072597f10d7e56d`)
+            console.log(blogs.data);
+        }
+        fetching();
+    })
     return (
         <div>
             <Splide

@@ -2,6 +2,7 @@ import React from 'react'
 import Herosection from '../Components/Home/Herosection'
 import Swiper from '../Components/Home/Swiper'
 import Section3 from '../Components/Home/Section3'
+import GridLayout from '../Components/Home/GridLayout'
 
 const Home = () => {
   return (
@@ -25,7 +26,12 @@ const Home = () => {
         </div>
       </section>
       <section className='mt-20'>
-
+        <div className='text-center font-bold text-2xl tracking-widest font-sans'>
+          <p>Design related topics</p>
+        </div>
+        <div className='mt-12 px-40'>
+          <GridLayout />
+        </div>
       </section>
     </>
   )
