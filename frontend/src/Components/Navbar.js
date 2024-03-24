@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import logo from '../Assests/logo.svg'
 import search from '../Assests/search.svg'
 import user from '../Assests/user.svg'
-import { motion } from 'framer-motion'
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
     const [searchbtn, setSearchbtn] = useState(false);
@@ -13,7 +13,7 @@ const Navbar = () => {
                     <div className='flex items-center w-64'>
                         <img src={logo} alt="logo" />
                     </div>
-                    <div className='flex '>
+                    <div className='lg:flex hidden'>
                         <div className='flex font-semibold items-center'>
                             <div className='py-2 px-3 '>
                                 <p className='cursor-pointer'>Home</p>
@@ -35,7 +35,7 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={`flex w-64`}>
+                    <div className={`w-64 lg:flex hidden`}>
                         <div className='flex items-center w-full space-x-5 justify-end'>
                             <div>
                                 <img src={search} alt="search" className='w-8' />
@@ -47,6 +47,9 @@ const Navbar = () => {
                                 <button className='border-2 font-semibold py-2 px-5 border-black rounded-lg'><span>Post Blog</span></button>
                             </div>
                         </div>
+                    </div>
+                    <div className='text-3xl max-lg:block hidden flex items-center'>
+                        <RxHamburgerMenu />
                     </div>
                 </div>
             </div>

@@ -13,6 +13,20 @@ const Herosection = () => {
           perPage: 3,
           arrows: false,
           autoplay: true,
+          breakpoints:{
+            600:{
+              perPage:1
+            },
+            700:{
+              perPage:2
+            },
+            1152:{
+              gap: 25
+            },
+            1300:{
+              gap: 30
+            }
+          }
         }}
       >
         <SplideSlide className=''>
@@ -21,14 +35,14 @@ const Herosection = () => {
               <div className='bg-[#FAFAFA] h-full'></div>
               {/* <img src="" alt="" /> */}
             </div>
-            <div className='h-24 absolute bottom-0 w-full'>
+            <div className='lg:h-24 absolute bottom-0 w-full'>
               <div className='uppercase bg-white text-sm w-fit font-serif px-3 mx-auto'>
                 <p className=''>tips and trick</p>
               </div>
               <div className=' text-base font-semibold font-serif text-center'>
                 <p className='h-full text-ellipsis '><span>How to become a good writer ? and you are ...</span> </p>
               </div>
-              <div className='flex justify-between text-[#A1A1A1] md:text-sm text-xs'>
+              <div className='flex max-[896px]:flex-wrap max-[896px]:justify-center max-[700px]:space-x-3 justify-between text-[#A1A1A1] xl:text-sm text-xs'>
                 <div>
                   <p>written by <span className='text-red-400 underline'>Thomas Paul</span></p>
                 </div>

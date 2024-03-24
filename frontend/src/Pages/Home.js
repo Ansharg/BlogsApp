@@ -16,7 +16,7 @@ const Home = () => {
         <div className='text-center font-bold text-2xl tracking-widest font-sans'>
           <p>Topics of the month</p>
         </div>
-        <div className='mt-12 px-40'>
+        <div className='mt-12 xl:px-40 lg:px-24 px-10'>
           <Swiper />
         </div>
       </section>
@@ -29,7 +29,7 @@ const Home = () => {
         <div className='text-center font-bold text-2xl tracking-widest font-sans'>
           <p>Design related topics</p>
         </div>
-        <div className='mt-12 px-40'>
+        <div className='mt-12 xl:px-40 lg:px-32 max-[900px]:px-16 px-10'>
           <GridLayout />
         </div>
       </section>
