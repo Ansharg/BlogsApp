@@ -7,7 +7,7 @@ const Herosection = () => {
     useEffect(()=>{
         async function fetching(){
             try {
-                const blogs = await axios.get(`${process.env.REACT_APP_BASE_URL}get-blog/65f06e4fe072597f10d7e56d`)
+                const blogs = await axios.get(`${process.env.REACT_APP_BASE_URL}blog/get-blog/65f06e4fe072597f10d7e56d`)
                 console.log(blogs.data);
             } catch (error) {
                 
